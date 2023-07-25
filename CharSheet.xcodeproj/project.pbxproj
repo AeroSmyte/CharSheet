@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4A12A6DE9490059829C /* CharSheetApp.swift */; };
-		D37ED4A42A6DE9490059829C /* CharacterListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4A32A6DE9490059829C /* CharacterListContentView.swift */; };
+		D37ED4A42A6DE9490059829C /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4A32A6DE9490059829C /* CharacterList.swift */; };
 		D37ED4A62A6DE94A0059829C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37ED4A52A6DE94A0059829C /* Assets.xcassets */; };
 		D37ED4A92A6DE94A0059829C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37ED4A82A6DE94A0059829C /* Preview Assets.xcassets */; };
 		D37ED4B32A6DE94B0059829C /* CharSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4B22A6DE94B0059829C /* CharSheetTests.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D37ED49E2A6DE9490059829C /* CharSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37ED4A12A6DE9490059829C /* CharSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSheetApp.swift; sourceTree = "<group>"; };
-		D37ED4A32A6DE9490059829C /* CharacterListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListContentView.swift; sourceTree = "<group>"; };
+		D37ED4A32A6DE9490059829C /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
 		D37ED4A52A6DE94A0059829C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D37ED4A82A6DE94A0059829C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D37ED4AE2A6DE94B0059829C /* CharSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,10 +100,10 @@
 			children = (
 				D37ED4CB2A6DEB140059829C /* Models */,
 				D37ED4A12A6DE9490059829C /* CharSheetApp.swift */,
-				D37ED4A32A6DE9490059829C /* CharacterListContentView.swift */,
+				D37ED4A32A6DE9490059829C /* CharacterList.swift */,
+				D37ED4D12A6F77830059829C /* CharacterDetailView.swift */,
 				D37ED4A52A6DE94A0059829C /* Assets.xcassets */,
 				D37ED4A72A6DE94A0059829C /* Preview Content */,
-				D37ED4D12A6F77830059829C /* CharacterDetailView.swift */,
 			);
 			path = CharSheet;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37ED4CD2A6DEB240059829C /* CharacterModel.swift in Sources */,
-				D37ED4A42A6DE9490059829C /* CharacterListContentView.swift in Sources */,
+				D37ED4A42A6DE9490059829C /* CharacterList.swift in Sources */,
 				D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */,
 				D37ED4D22A6F77830059829C /* CharacterDetailView.swift in Sources */,
 			);
