@@ -34,7 +34,7 @@
 <h3 align="center">QuickChar</h3>
 
   <p align="center">
-    QuickChar is an ambitious, quick character sheet index. Store, add, edit, and show off the barebones sheet needed to sit down at a table and play your favorite TTRPG.
+    CharSheet is an ambitious, quick character sheet index. Store, add, edit, and show off the barebones sheet needed to sit down at a table and play your favorite TTRPG.
     <br />
     <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]"><strong>Explore the docs »</strong></a>
     <br />
@@ -67,7 +67,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -79,6 +78,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<img width="468" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ce2652eb-969c-4fdd-bc2f-45f7473918a3">
+<img width="468" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ea653f0b-ce4b-4f99-b490-35f192c6ca50">
+
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -180,21 +182,23 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
+<!-- LICENSE 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+-->
+
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Lexi McQueen - [@lexcmcqueen](https://twitter.com/lexcmcqueen) - alexismcqueen01@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/AeroSmyte/CharSheet](https://github.com/AeroSmyte/CharSheet)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,9 +207,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Ana Nogal](https://github.com/ananogal)
+* [Sean Allen's Custom Cell Tutorial](https://www.youtube.com/watch?v=k5rupivxnMA&list=PL8seg1JPkqgHyWCBHwXGmfysQpEQTfC3z&t=135)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,8 +218,6 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
 [stars-url]: https://github.com/github_username/repo_name/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
@@ -224,5 +225,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: [https://linkedin.com/in/alexis-mcqueen-34070b149]
+[product-screenshot]: 
