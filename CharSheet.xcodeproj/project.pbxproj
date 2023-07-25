@@ -16,6 +16,7 @@
 		D37ED4BF2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4BE2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift */; };
 		D37ED4CD2A6DEB240059829C /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4CC2A6DEB240059829C /* CharacterModel.swift */; };
 		D37ED4D22A6F77830059829C /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4D12A6F77830059829C /* CharacterDetailView.swift */; };
+		D37ED4D42A703E570059829C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D37ED4D32A703E560059829C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D37ED4BE2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSheetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D37ED4CC2A6DEB240059829C /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		D37ED4D12A6F77830059829C /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		D37ED4D32A703E560059829C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D37ED4CB2A6DEB140059829C /* Models */,
 				D37ED4A12A6DE9490059829C /* CharSheetApp.swift */,
 				D37ED4A32A6DE9490059829C /* CharacterList.swift */,
+				D37ED4D32A703E560059829C /* README.md */,
 				D37ED4D12A6F77830059829C /* CharacterDetailView.swift */,
 				D37ED4A52A6DE94A0059829C /* Assets.xcassets */,
 				D37ED4A72A6DE94A0059829C /* Preview Content */,
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37ED4D42A703E570059829C /* README.md in Resources */,
 				D37ED4A92A6DE94A0059829C /* Preview Assets.xcassets in Resources */,
 				D37ED4A62A6DE94A0059829C /* Assets.xcassets in Resources */,
 			);
