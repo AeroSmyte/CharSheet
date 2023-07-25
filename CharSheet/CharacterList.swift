@@ -11,7 +11,8 @@ struct CharacterList: View {
     var characters : [Character] = CharList.tenCharacters
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
+            
             List(characters, id: \.id) { character in
                 NavigationLink(destination: CharacterDetailView(character: character), label: {
                     Text("Navigate")
@@ -19,6 +20,13 @@ struct CharacterList: View {
                 })
             }
             .navigationTitle("QuickChar")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Add") {
+                        print("Add tapped!")
+                    }
+                }
+            }
         }
     }
 }
