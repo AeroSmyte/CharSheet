@@ -34,7 +34,7 @@
 <h3 align="center">QuickChar</h3>
 
   <p align="center">
-    CharSheet is an ambitious, quick character sheet index. Store, add, edit, and show off the barebones sheet needed to sit down at a table and play your favorite TTRPG.
+    QuickChar is an ambitious, quick character sheet index. Store, add, edit, and show off the barebones sheet needed to sit down at a table and play your favorite TTRPG.
     <br />
     <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]"><strong>Explore the docs »</strong></a>
     <br />
