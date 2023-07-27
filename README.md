@@ -18,9 +18,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/AeroSmyte/QuickChar] 
-[![Issues][issues-shield]][https://github.com/AeroSmyte/QuickChar/issues]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/alexis-mcqueen-34070b149/]
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -28,6 +28,7 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
+  <img width="100" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/6d45bd74-e70f-486a-a687-83199dd2973c)">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
@@ -78,8 +79,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img width="468" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ce2652eb-969c-4fdd-bc2f-45f7473918a3">
-<img width="468" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ea653f0b-ce4b-4f99-b490-35f192c6ca50">
+<img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ce2652eb-969c-4fdd-bc2f-45f7473918a3">
+<img width="30" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ea653f0b-ce4b-4f99-b490-35f192c6ca50">
 
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -89,76 +90,27 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
-### Prerequisites
+### Design Phases
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/AeroSmyte/CharSheet.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage & Development
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This app has been in development for two years, going through many iterations to get to the point where development was possible. See the Sketch design below, and screenshots above of its current state.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<img width="500" alt="Screenshot 2023-07-26 at 7 48 34 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/32505566-d1e0-4402-82c6-c9726e33208a">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03">
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+<p align="center">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
