@@ -79,8 +79,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ce2652eb-969c-4fdd-bc2f-45f7473918a3">
-<img width="30" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ea653f0b-ce4b-4f99-b490-35f192c6ca50">
+
 
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -109,6 +108,11 @@ This app has been in development for two years, going through many iterations to
 <img width="500" alt="Screenshot 2023-07-26 at 7 48 34 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/32505566-d1e0-4402-82c6-c9726e33208a">
 
   <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03">
+
+  <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">
+  
+<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">
+
 
 <p align="center">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,12 +172,12 @@ Project Link: [https://github.com/AeroSmyte/CharSheet](https://github.com/AeroSm
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[contributors-shield]: https://img.shields.io/github/contributors/AeroSmyte/QuickChar.svg?style=for-the-badge
+[contributors-url]: https://github.com/AeroSmyte/QuickChar/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/AeroSmyte/QuickChar.svg?style=for-the-badge
+[stars-url]: https://github.com/AeroSmyte/QuickChar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AeroSmyte/QuickChar.svg?style=for-the-badge
+[issues-url]: https://github.com/AeroSmyte/QuickChar/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
