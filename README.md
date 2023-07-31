@@ -158,4 +158,3 @@ Project Link: [https://github.com/AeroSmyte/CharSheet](https://github.com/AeroSm
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: [https://linkedin.com/in/alexis-mcqueen-34070b149]
-[product-screenshot]: 
