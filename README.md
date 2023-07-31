@@ -92,12 +92,13 @@ This app has been in development for two years, going through many iterations to
 
 | Before | After |
 | ------------- |-------------|
-| <img width="500" alt="Screenshot 2023-07-26 at 7 48 34 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/32505566-d1e0-4402-82c6-c9726e33208a">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">|
+| <img width="300" alt="Screenshot 2023-07-31 at 12 25 54 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/26699faf-159c-4b5e-b275-1e5e1f9f9b91">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">|
 | <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03"> |<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">|
 
 <p align="center">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LICENSE 
 ## License
