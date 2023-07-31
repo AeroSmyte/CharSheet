@@ -74,7 +74,7 @@
 
 This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
-<img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e"> <img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8"> 
+![CharSheet-ScreenRecord](https://github.com/AeroSmyte/QuickChar/assets/10874878/03fc6e05-f380-4220-aab5-c2a445ae98f2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
