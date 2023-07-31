@@ -74,7 +74,7 @@
 
 This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
-| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e"> | <img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8"> |
+<img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e"> <img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8"> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,14 +90,10 @@ This app is the starting point for an app that will eventually allow players and
 
 This app has been in development for two years, going through many iterations to get to the point where development was possible. See the Sketch design below, and screenshots above of its current state.
 
-<img width="500" alt="Screenshot 2023-07-26 at 7 48 34 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/32505566-d1e0-4402-82c6-c9726e33208a">
-
-  <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03">
-
-  <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">
-  
-<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">
-
+| Before | After |
+| ------------- |-------------|
+| <img width="500" alt="Screenshot 2023-07-26 at 7 48 34 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/32505566-d1e0-4402-82c6-c9726e33208a">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">|
+| <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03"> |<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">|
 
 <p align="center">(<a href="#readme-top">back to top</a>)</p>
 
