@@ -77,10 +77,6 @@ This app is the starting point for an app that will eventually allow players and
 | CharacterList | CharacterDetail |
 | <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e"> | <img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8"> |
 
-[  <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">
-  
-<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
