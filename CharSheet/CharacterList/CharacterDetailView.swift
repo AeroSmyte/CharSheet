@@ -13,11 +13,6 @@ struct CharacterDetailView: View {
     var body: some View {
         VStack(spacing: 15) {
             Spacer()
-            Image(character.characterIcon)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200)
-                .cornerRadius(4)
             
             Text(character.characterName)
                 .font(.title2)
@@ -46,17 +41,20 @@ struct CharacterDetailView: View {
             
             Spacer()
             
-            Link(destination: character.URL, label: {
-                StandardButton(title: "Link To Sheet")
-            })
+//            Link(destination: character.URL, label: {
+//                StandardButton(title: "Link To Sheet")
+//            })
             
         }
     }
 }
 
 struct CharacterDetailView_Previews: PreviewProvider {
+    
+    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, CharacterClass: .None, URL: "google.com")
+    
     static var previews: some View {
-        CharacterDetailView(character: CharList.tenCharacters.first ?? Character(gameType: .FantasyStandard, username: "blackgirlmage", characterName: "Character Not Supplied", level: 0, hitPoints: 0, CharacterClass: .None, characterIcon: "none-icon", URL: URL(string: "google.com")!))
+        CharacterDetailView(character: character1)
     }
 }
 
