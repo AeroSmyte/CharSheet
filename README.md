@@ -28,6 +28,7 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
+  <img width="100" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/6d45bd74-e70f-486a-a687-83199dd2973c)">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
@@ -56,18 +57,10 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With SwiftUI</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#built-with">Design Phases</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -78,108 +71,33 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img width="468" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ce2652eb-969c-4fdd-bc2f-45f7473918a3">
-<img width="468" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/CharSheet/assets/10874878/ea653f0b-ce4b-4f99-b490-35f192c6ca50">
 
+This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+![CharSheet-ScreenRecord](https://github.com/AeroSmyte/QuickChar/assets/10874878/03fc6e05-f380-4220-aab5-c2a445ae98f2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Design Phases
 
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/AeroSmyte/CharSheet.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage & Development
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This app has been in development for two years, going through many iterations to get to the point where development was possible. See the Sketch design below, and screenshots above of its current state.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+| Before | After |
+| ------------- |-------------|
+| <img width="300" alt="Screenshot 2023-07-31 at 12 25 54 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/26699faf-159c-4b5e-b275-1e5e1f9f9b91">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">|
+| <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03"> |<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">|
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+<p align="center">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE 
@@ -216,14 +134,13 @@ Project Link: [https://github.com/AeroSmyte/CharSheet](https://github.com/AeroSm
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[contributors-shield]: https://img.shields.io/github/contributors/AeroSmyte/QuickChar.svg?style=for-the-badge
+[contributors-url]: https://github.com/AeroSmyte/QuickChar/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/AeroSmyte/QuickChar.svg?style=for-the-badge
+[stars-url]: https://github.com/AeroSmyte/QuickChar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AeroSmyte/QuickChar.svg?style=for-the-badge
+[issues-url]: https://github.com/AeroSmyte/QuickChar/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: [https://linkedin.com/in/alexis-mcqueen-34070b149]
-[product-screenshot]: 
