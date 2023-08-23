@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
-  <img width="100" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/6d45bd74-e70f-486a-a687-83199dd2973c)">
+  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/1727d111-769d-4118-906f-541594a59221)">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
