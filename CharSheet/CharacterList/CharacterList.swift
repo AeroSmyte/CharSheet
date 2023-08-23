@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterList: View {
     
-    @EnvironmentObject var listViewModel : ListViewModel
+    @EnvironmentObject var listViewModel : CharacterListViewModel
     
     @State var isAddFormActive = false
     
@@ -17,24 +17,26 @@ struct CharacterList: View {
         NavigationStack {
             
             List {
-                ForEach(listViewModel.characters) { character in
+                ForEach(listViewModel.filteredCharacters) { character in
                     // add bottom sheet here
-                    //                    NavigationLink(destination: CharacterDetailView(character: character), label: {
-                    CharacterCell(character: character)
-                    //                    })
+                    NavigationLink(destination: CharacterDetailView(character: character), label: {
+                        CharacterCell(character: character)
+                    })
                 }
                 .onDelete(perform: listViewModel.deleteCharacter)
                 .onMove(perform: listViewModel.moveCharacter)
                 .navigationTitle("QuickChar")
             }
             .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddCharacterForm()))
+            
+            .searchable(text: $listViewModel.searchText)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-            CharacterList()
-        .environmentObject(ListViewModel())
+        CharacterList()
+            .environmentObject(CharacterListViewModel())
     }
 }

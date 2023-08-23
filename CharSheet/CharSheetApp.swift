@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CharSheetApp: App {
     
-    @StateObject var listViewModel : ListViewModel = ListViewModel()
+    @StateObject var listViewModel : CharacterListViewModel = CharacterListViewModel()
     
     var body: some Scene {
         WindowGroup {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D33EF8742A899661001AE81A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EF8732A899661001AE81A /* ListViewModel.swift */; };
+		D33EF8742A899661001AE81A /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EF8732A899661001AE81A /* CharacterListViewModel.swift */; };
 		D33EF8772A899D9C001AE81A /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EF8762A899D9B001AE81A /* CharacterCell.swift */; };
 		D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4A12A6DE9490059829C /* CharSheetApp.swift */; };
 		D37ED4A62A6DE94A0059829C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37ED4A52A6DE94A0059829C /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D33EF8732A899661001AE81A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D33EF8732A899661001AE81A /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		D33EF8762A899D9B001AE81A /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		D37ED49E2A6DE9490059829C /* CharSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37ED4A12A6DE9490059829C /* CharSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSheetApp.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				D3CEC04B2A78130A00529EB7 /* CharacterModel.swift */,
 				D3CEC04C2A78130A00529EB7 /* CharacterDetailView.swift */,
 				D3CEC04D2A78130A00529EB7 /* CharacterList.swift */,
-				D33EF8732A899661001AE81A /* ListViewModel.swift */,
+				D33EF8732A899661001AE81A /* CharacterListViewModel.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			files = (
 				D3B73AD62A7B6AC90011B472 /* AddCharacterForm.swift in Sources */,
 				D3CEC04F2A78130A00529EB7 /* CharacterDetailView.swift in Sources */,
-				D33EF8742A899661001AE81A /* ListViewModel.swift in Sources */,
+				D33EF8742A899661001AE81A /* CharacterListViewModel.swift in Sources */,
 				D33EF8772A899D9C001AE81A /* CharacterCell.swift in Sources */,
 				D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */,
 				D3CEC04E2A78130A00529EB7 /* CharacterModel.swift in Sources */,

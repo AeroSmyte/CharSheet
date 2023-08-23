@@ -7,9 +7,18 @@
 
 import Foundation
 
-class ListViewModel : ObservableObject {
+class CharacterListViewModel : ObservableObject {
     
     @Published var characters : [Character] = []
+    @Published var searchText: String = ""
+    
+    var filteredCharacters: [Character] {
+        guard !searchText.isEmpty else { return characters }
+        
+        return characters.filter { char in
+            char.characterName.lowercased().contains(searchText.lowercased())
+        }
+    }
     
     init() {
         getCharacters()
@@ -42,30 +51,5 @@ class ListViewModel : ObservableObject {
     func moveCharacter(from: IndexSet, to: Int) {
         characters.move(fromOffsets: from, toOffset: to)
     }
-    
 }
 
-// i don't believe in separate accounts, i think it's sneaky and dirty
-// i went on a 24 hour trip to disneyland, and that ruined a friendship
-// i don't believe in texting arguments, because you're always going to read it wrong and
-// i want to meet your family, i feel like if i can't
-// you met half of mine and mine is big
-// i'll re-evaluate on saturday
-// asking about his grandma's lifestyle choices, diabetes and shitm talking about heart problems on her side of the family???
-
-// do you believe in doing the dishes a certain way?
-// definitely most likely all my kids will need therapy.
-// "really?"
-// not because of something we've done, but becuase my sister has bipolar, and if you are
-// if i had twins for our first pregnancy, id never have kids again
-
-// not western medicine. if i can do it at home, then i will
-// no hospital, it's too
-// i think shots right after a birth is wrong
-// anyone who's unvaccinated should
-
-// I haven't gotten a flu shot in 4 yeras
-// he told me if i had a home birth he'd be mad because it's dangerous, which it is, but so many poeple in the old times did it
-
-// i think we should be able to have guns in houses but they should never know you have a safe
-// public school they should not mask

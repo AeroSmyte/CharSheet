@@ -11,7 +11,7 @@ import SwiftUI
 struct AddCharacterForm: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var listViewModel : ListViewModel
+    @EnvironmentObject var listViewModel : CharacterListViewModel
 
     @State var characterName : String = ""
     @State private var selectedGameType : GameType = .FantasyStandard
@@ -93,21 +93,6 @@ struct DetailView_Previews: PreviewProvider {
         AddCharacterForm()
             .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
             .previewDisplayName("Form View")
-            .environmentObject(ListViewModel())
+            .environmentObject(CharacterListViewModel())
     }
-
 }
-
-
-// I'm a little bit of a Marvel nerd, i watched them all in the correct order
-// i want an RV and a family vacation every year on the off times
-// ONE IPHONE FOR THE KIDS???
-// NO SLEEPOVERS????
-// relatives don't get automatic access
-
-// went to Mr. Roger's neighborhood church and got KICKED OUT???
-// SHE DID NOT READ THAT AS A RED FLAG????
-// Latter day saints: no apparently
-// I'M NOT GOING TO DRESS BADLY IN FRONT OF YOUR GUYS
-// no llamas, no alpacas, dont want horses
-// ONE cow, one cat and we will never take it out back and shoot them
