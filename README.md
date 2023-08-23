@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
-  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/4ca2c82b-cbe9-4012-b3e7-fc2ded9773b4">
+  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/54d7ea43-0104-44c0-b0be-d62309b4a6e0">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
@@ -76,6 +76,9 @@
 This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
 ![CharSheet-ScreenRecord](https://github.com/AeroSmyte/QuickChar/assets/10874878/03fc6e05-f380-4220-aab5-c2a445ae98f2)
+
+
+![NewestScreenRecording](https://github.com/AeroSmyte/QuickChar/assets/10874878/54c59c50-0171-49c8-b6c1-43ec90c86b71)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
