@@ -28,9 +28,10 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
-  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/1727d111-769d-4118-906f-541594a59221)">
+  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/4ca2c82b-cbe9-4012-b3e7-fc2ded9773b4">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
+
 
 <h3 align="center">QuickChar</h3>
 
