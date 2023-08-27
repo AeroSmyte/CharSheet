@@ -28,9 +28,10 @@
 <br />
 <div align="center">
   <a href="[https://github.com/AeroSmyte/CharSheet/tree/main]">
-  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/1727d111-769d-4118-906f-541594a59221)">
+  <img width="200" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/54d7ea43-0104-44c0-b0be-d62309b4a6e0">
 <!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
+
 
 <h3 align="center">QuickChar</h3>
 
@@ -60,8 +61,9 @@
         <li><a href="#built-with">Design Phases</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#usage & Design Phases">Usage</a></li>
+    <li><a href="#Tools Used">Tools Used</a></li>
+    <li><a href="#contact">Future Technologies</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -74,30 +76,35 @@
 
 This app is the starting point for an app that will eventually allow players and game masters of all types to catalogue, create, and share the many characters idling on their computers. 
 
-![CharSheet-ScreenRecord](https://github.com/AeroSmyte/QuickChar/assets/10874878/03fc6e05-f380-4220-aab5-c2a445ae98f2)
+<!--  ![Simulator Screenshot - iPhone 14 Pro - 2023-08-23 at 17 01 24](https://github.com/AeroSmyte/QuickChar/assets/10874878/8be6c337-abeb-4c67-913f-88d74cb18b97) -->
+
+  <img src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c00d923e-53cf-4ba7-b670-e6527a660c01" alt="My Project GIF" width="300" height="651">
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Design Phases
-
-  
-
-
+# Design Phases
 
 <!-- USAGE EXAMPLES -->
 ## Usage & Development
 
 This app has been in development for two years, going through many iterations to get to the point where development was possible. See the Sketch design below, and screenshots above of its current state.
 
-| Before | After |
-| ------------- |-------------|
-| <img width="300" alt="Screenshot 2023-07-31 at 12 25 54 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/26699faf-159c-4b5e-b275-1e5e1f9f9b91">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">|
-| <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03"> |<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">|
+| Sketch/Storyboarding | V0 | V1.0 |
+| ------------- |-------------| -------------|
+| <img width="250" alt="Screenshot 2023-07-31 at 12 25 54 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/26699faf-159c-4b5e-b275-1e5e1f9f9b91">| <img width="300" alt="Screenshot 2023-07-25 at 1 45 55 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/c5b4dbfa-9d00-457b-a3bd-d42dcc106d9e">| <img width="300" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/5608bc81-142f-48f5-957b-b73933074b7c">
+| <img width="500" alt="Screenshot 2023-07-26 at 7 48 45 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9ebb9cfa-959e-4f29-9039-3b5f3cb56d03"> |<img width="300" alt="Screenshot 2023-07-25 at 1 46 59 PM" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/9eea61cb-f6c2-4ec7-b315-91ea12f2c7e8">| <img width="300" alt="Simulator Screenshot - iPhone 14 Pro - 2023-08-23 at 17 13 15" src="https://github.com/AeroSmyte/QuickChar/assets/10874878/0d9db378-9163-428c-8225-f93732635e42"> |
+
+## Tools Used
+- 📱 User Defaults
+- MVVM
+
+## Future Implements
+- Core Data
+- Sharing of Character Sheets
 
 <p align="center">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- LICENSE 
