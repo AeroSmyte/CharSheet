@@ -23,7 +23,7 @@ struct CharacterCell : View {
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 
-                Text(character.CharacterClass.rawValue)
+                Text(character.characterType.rawValue)
             }
         }
     }

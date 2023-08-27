@@ -33,10 +33,10 @@ struct CharacterDetailView: View {
                         Text("Level \(character.level)")
                             .font(.title3)
                             .foregroundColor(.secondary)
-                        Text(character.CharacterClass.rawValue)
+                        Text(character.characterType.rawValue)
                             .font(.title3)
                             .foregroundColor(.secondary)
-                        //            }
+                        
                     }
                     
                     HStack {
@@ -60,7 +60,7 @@ struct CharacterDetailView: View {
 
 struct CharacterDetailView_Previews: PreviewProvider {
     
-    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, CharacterClass: .None, URL: "google.com")
+    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, characterType: .None, URL: "google.com")
     
     static var previews: some View {
         CharacterDetailView(character: character1)
