@@ -17,7 +17,7 @@ struct AddCharacterForm: View {
     @State private var selectedGameType : GameType = .FantasyStandard
     @State private var selectedLevel = 1
     @State private var selectedHitPoints = 0
-    @State private var selectedClass : CharacterClass = .Barbarian
+    @State private var selectedClass : characterType = .Barbarian
     @State private var inputURL = ""
 
     
@@ -53,7 +53,7 @@ struct AddCharacterForm: View {
                 }
                 
                 Picker("Pick Your Class", selection: $selectedClass) {
-                    ForEach(CharacterClass.allCases, id: \.self) { className in
+                    ForEach(characterType.allCases, id: \.self) { className in
                         Text("\(className.rawValue)")
                             .tag(className)
                     }

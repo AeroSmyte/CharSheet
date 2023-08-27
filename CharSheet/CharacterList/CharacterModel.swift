@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-enum CharacterClass : String, CaseIterable {
+enum characterType : String, CaseIterable {
     case Bard = "Bard"
     case Rogue = "Rogue"
     case Barbarian = "Barbarian"
@@ -31,10 +31,9 @@ struct Character : Identifiable {
     
     var gameType : GameType
     var characterName : String
-    // var userName
     var level : Int
     var hitPoints : Int
-    var CharacterClass : CharacterClass
+    var characterType : characterType
     var id = UUID().uuidString
     var URL : String? 
 }

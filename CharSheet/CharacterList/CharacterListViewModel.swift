@@ -25,10 +25,10 @@ class CharacterListViewModel : ObservableObject {
     }
     
     func getCharacters() {
-        let newCharacters = [Character(gameType: .FantasyStandard, characterName: "Baron Blueswift", level: 6, hitPoints: 56, CharacterClass: .Cleric, URL: "https://www.dndbeyond.com/characters/29683409"),
-        Character(gameType: .PBtA, characterName: "Queza Uovemolo", level: 15, hitPoints: 126, CharacterClass: .Druid, URL: "https://www.dndbeyond.com/characters/99734931"),
-        Character(gameType: .FantasyStandard, characterName: "Briarwynn Thuneduk", level: 7, hitPoints: 73, CharacterClass: .Druid, URL: "https://www.dndbeyond.com/characters/93087064"),
-        Character(gameType: .FantasyStandard,characterName: "Anselm Khumaal", level: 9, hitPoints: 98, CharacterClass: .Bard, URL: "https://www.dndbeyond.com/characters/88897953")
+        let newCharacters = [Character(gameType: .FantasyStandard, characterName: "Baron Blueswift", level: 6, hitPoints: 56, characterType: .Cleric, URL: "https://www.dndbeyond.com/characters/29683409"),
+        Character(gameType: .PBtA, characterName: "Queza Uovemolo", level: 15, hitPoints: 126, characterType: .Druid, URL: "https://www.dndbeyond.com/characters/99734931"),
+        Character(gameType: .FantasyStandard, characterName: "Briarwynn Thuneduk", level: 7, hitPoints: 73, characterType: .Druid, URL: "https://www.dndbeyond.com/characters/93087064"),
+        Character(gameType: .FantasyStandard,characterName: "Anselm Khumaal", level: 9, hitPoints: 98, characterType: .Bard, URL: "https://www.dndbeyond.com/characters/88897953")
                              ]
         
         characters.append(contentsOf: newCharacters)
@@ -38,9 +38,9 @@ class CharacterListViewModel : ObservableObject {
                       characterName: String,
                       level: Int,
                       hitPoints: Int,
-                      characterClass: CharacterClass,
+                      characterClass: characterType,
                       URL: String) {
-        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, CharacterClass: characterClass, URL: URL)
+        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterType: characterClass, URL: URL)
         characters.append(newChar)
     }
     
