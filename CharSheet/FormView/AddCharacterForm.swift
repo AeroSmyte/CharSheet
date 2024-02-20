@@ -14,7 +14,7 @@ struct AddCharacterForm: View {
     @EnvironmentObject var listViewModel : CharacterListViewModel
 
     @State var characterName : String = ""
-    @State private var selectedGameType : GameType = .FantasyStandard
+    @State private var selectedGameType : gameType = .FantasyStandard
     @State private var selectedLevel = 1
     @State private var selectedHitPoints = 0
     @State private var selectedClass : characterType = .Barbarian
@@ -30,8 +30,8 @@ struct AddCharacterForm: View {
                 }
                 
                 Picker("RPG Type", selection: $selectedGameType) {
-                    Text("That Fantasy Game").tag(GameType.FantasyStandard)
-                    Text("PbTA").tag(GameType.PBtA)
+                    Text("That Fantasy Game").tag(gameType.FantasyStandard)
+                    Text("PbTA").tag(gameType.PBtA)
                 }
                 .pickerStyle(.inline)
                 
@@ -81,7 +81,7 @@ struct AddCharacterForm: View {
     }
     
     func saveButtonPressed() {
-        listViewModel.addCharacter(gameType: selectedGameType, characterName: characterName, level: selectedLevel, hitPoints: selectedHitPoints, characterClass: selectedClass, URL: inputURL)
+        listViewModel.addCharacter(gameType: selectedGameType, characterName: characterName, level: selectedLevel, hitPoints: selectedHitPoints, characterType: selectedClass, URL: inputURL)
         
         presentationMode.wrappedValue.dismiss()
     }

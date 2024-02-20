@@ -15,21 +15,25 @@ struct CharacterList: View {
     
     var body: some View {
         NavigationStack {
-            
-            List {
-                ForEach(listViewModel.filteredCharacters) { character in
-                    // add bottom sheet here
-                    NavigationLink(destination: CharacterDetailView(character: character), label: {
-                        CharacterCell(character: character)
-                    })
+        
+            if listViewModel.characters.isEmpty {
+                NoCharactersView()
+                    .navigationTitle("No Characters!")
+            } else {
+                List {
+                    ForEach(listViewModel.filteredCharacters) { character in
+                        NavigationLink(destination: CharacterDetailCardView(character: character), label: {
+                            CharacterCell(character: character)
+                        })
+                    }
+                    .onDelete(perform: listViewModel.deleteCharacter)
+                    .onMove(perform: listViewModel.moveCharacter)
+                    .navigationTitle("QuickChar")
                 }
-                .onDelete(perform: listViewModel.deleteCharacter)
-                .onMove(perform: listViewModel.moveCharacter)
-                .navigationTitle("QuickChar")
+                .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddCharacterForm()))
+                
+                .searchable(text: $listViewModel.searchText)
             }
-            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddCharacterForm()))
-            
-            .searchable(text: $listViewModel.searchText)
         }
     }
 }

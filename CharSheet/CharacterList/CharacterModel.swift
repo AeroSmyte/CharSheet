@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-enum characterType : String, CaseIterable {
+enum characterType : String, CaseIterable, Codable {
     case Bard = "Bard"
     case Rogue = "Rogue"
     case Barbarian = "Barbarian"
@@ -21,19 +21,18 @@ enum characterType : String, CaseIterable {
     case Warlock = "Warlock"
     case None = "None"
 }
-enum GameType {
+
+enum gameType: Codable {
     case FantasyStandard, PBtA
 }
 
-struct Character : Identifiable {
-    
-    var didChange = PassthroughSubject<Void, Never>()
-    
-    var gameType : GameType
+struct Character : Identifiable, Codable {
+    var gameType : gameType
     var characterName : String
     var level : Int
     var hitPoints : Int
     var characterType : characterType
     var id = UUID().uuidString
-    var URL : String? 
+    var URL : String?
 }
+

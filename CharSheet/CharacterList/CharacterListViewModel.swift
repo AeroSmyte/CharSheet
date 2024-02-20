@@ -9,8 +9,14 @@ import Foundation
 
 class CharacterListViewModel : ObservableObject {
     
-    @Published var characters : [Character] = []
+    @Published var characters : [Character] = [] {
+        didSet {
+            saveCharacters()
+        }
+    }
     @Published var searchText: String = ""
+    
+    let characterKey = "character_list"
     
     var filteredCharacters: [Character] {
         guard !searchText.isEmpty else { return characters }
@@ -25,22 +31,21 @@ class CharacterListViewModel : ObservableObject {
     }
     
     func getCharacters() {
-        let newCharacters = [Character(gameType: .FantasyStandard, characterName: "Baron Blueswift", level: 6, hitPoints: 56, characterType: .Cleric, URL: "https://www.dndbeyond.com/characters/29683409"),
-        Character(gameType: .PBtA, characterName: "Queza Uovemolo", level: 15, hitPoints: 126, characterType: .Druid, URL: "https://www.dndbeyond.com/characters/99734931"),
-        Character(gameType: .FantasyStandard, characterName: "Briarwynn Thuneduk", level: 7, hitPoints: 73, characterType: .Druid, URL: "https://www.dndbeyond.com/characters/93087064"),
-        Character(gameType: .FantasyStandard,characterName: "Anselm Khumaal", level: 9, hitPoints: 98, characterType: .Bard, URL: "https://www.dndbeyond.com/characters/88897953")
-                             ]
+        guard
+            let data = UserDefaults.standard.data(forKey: characterKey),
+            let savedCharacters = try? JSONDecoder().decode([Character].self, from: data)
+         else { return }
         
-        characters.append(contentsOf: newCharacters)
+        self.characters = savedCharacters
     }
     
-    func addCharacter(gameType: GameType,
+    func addCharacter(gameType: gameType,
                       characterName: String,
                       level: Int,
                       hitPoints: Int,
-                      characterClass: characterType,
+                      characterType: characterType,
                       URL: String) {
-        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterType: characterClass, URL: URL)
+        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterType: characterType, URL: URL)
         characters.append(newChar)
     }
     
@@ -50,6 +55,12 @@ class CharacterListViewModel : ObservableObject {
     
     func moveCharacter(from: IndexSet, to: Int) {
         characters.move(fromOffsets: from, toOffset: to)
+    }
+    
+    func saveCharacters() {
+        if let encodedData = try? JSONEncoder().encode(characters) {
+            UserDefaults.standard.set(encodedData, forKey: characterKey)
+        }
     }
 }
 
