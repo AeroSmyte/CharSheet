@@ -27,7 +27,7 @@ struct CharacterCell : View {
                     .foregroundColor(.secondary)
                 
                 
-                Text(character.characterType.rawValue)
+                Text(character.characterClass.rawValue)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -36,7 +36,7 @@ struct CharacterCell : View {
 }
 
 struct CharacterCellView_Previews: PreviewProvider {
-    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, characterType: .None, URL: "google.com")
+    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, characterClass: .None, URL: "google.com")
     
     static var previews: some View {
         CharacterCell(character: character1)

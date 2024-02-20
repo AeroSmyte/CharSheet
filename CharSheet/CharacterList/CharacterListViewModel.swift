@@ -43,9 +43,9 @@ class CharacterListViewModel : ObservableObject {
                       characterName: String,
                       level: Int,
                       hitPoints: Int,
-                      characterType: characterType,
+                      characterType: characterClass,
                       URL: String) {
-        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterType: characterType, URL: URL)
+        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterClass: characterType, URL: URL)
         characters.append(newChar)
     }
     

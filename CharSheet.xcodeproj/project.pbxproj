@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D304E0E62B852CB200784B2A /* ClassTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304E0E52B852CB200784B2A /* ClassTitleView.swift */; };
+		D304E0E82B852CE200784B2A /* CharacterNameTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304E0E72B852CE200784B2A /* CharacterNameTitleView.swift */; };
+		D304E0EA2B852D3200784B2A /* LevelAndHPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304E0E92B852D3200784B2A /* LevelAndHPView.swift */; };
+		D304E0EC2B852DBE00784B2A /* StandardLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304E0EB2B852DBE00784B2A /* StandardLinkButton.swift */; };
 		D33EF8742A899661001AE81A /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EF8732A899661001AE81A /* CharacterListViewModel.swift */; };
 		D33EF8772A899D9C001AE81A /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EF8762A899D9B001AE81A /* CharacterCell.swift */; };
 		D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4A12A6DE9490059829C /* CharSheetApp.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D304E0E52B852CB200784B2A /* ClassTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTitleView.swift; sourceTree = "<group>"; };
+		D304E0E72B852CE200784B2A /* CharacterNameTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameTitleView.swift; sourceTree = "<group>"; };
+		D304E0E92B852D3200784B2A /* LevelAndHPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelAndHPView.swift; sourceTree = "<group>"; };
+		D304E0EB2B852DBE00784B2A /* StandardLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLinkButton.swift; sourceTree = "<group>"; };
 		D33EF8732A899661001AE81A /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		D33EF8762A899D9B001AE81A /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		D37ED49E2A6DE9490059829C /* CharSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D304E0E42B852C9600784B2A /* CharacterDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				D304E0E52B852CB200784B2A /* ClassTitleView.swift */,
+				D304E0E72B852CE200784B2A /* CharacterNameTitleView.swift */,
+				D304E0E92B852D3200784B2A /* LevelAndHPView.swift */,
+				D304E0EB2B852DBE00784B2A /* StandardLinkButton.swift */,
+			);
+			path = CharacterDetailView;
+			sourceTree = "<group>";
+		};
 		D33EF8752A899D85001AE81A /* Character */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +133,7 @@
 		D37ED4A02A6DE9490059829C /* CharSheet */ = {
 			isa = PBXGroup;
 			children = (
+				D304E0E42B852C9600784B2A /* CharacterDetailView */,
 				D3F08B302A9B12D2001996F6 /* NoCharacters */,
 				D33EF8752A899D85001AE81A /* Character */,
 				D3B73AD42A7B6AAB0011B472 /* FormView */,
@@ -309,11 +329,15 @@
 			files = (
 				D3B73AD62A7B6AC90011B472 /* AddCharacterForm.swift in Sources */,
 				D3F08B2F2A9B12C8001996F6 /* NoCharactersView.swift in Sources */,
+				D304E0E62B852CB200784B2A /* ClassTitleView.swift in Sources */,
 				D3CEC04F2A78130A00529EB7 /* CharacterDetailView.swift in Sources */,
+				D304E0E82B852CE200784B2A /* CharacterNameTitleView.swift in Sources */,
+				D304E0EA2B852D3200784B2A /* LevelAndHPView.swift in Sources */,
 				D33EF8742A899661001AE81A /* CharacterListViewModel.swift in Sources */,
 				D33EF8772A899D9C001AE81A /* CharacterCell.swift in Sources */,
 				D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */,
 				D3CEC04E2A78130A00529EB7 /* CharacterModel.swift in Sources */,
+				D304E0EC2B852DBE00784B2A /* StandardLinkButton.swift in Sources */,
 				D3CEC0502A78130A00529EB7 /* CharacterList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
