@@ -18,7 +18,6 @@ struct LevelAndHPView: View {
       ProgressView(value: (Double(level) / 20.0)) {
         CharacterDetailsTextView(text: "Level \(level)".uppercased())
           .kerning(1)
-
       }
         
       ProgressView(value: (Double(hitPoints) / Double(totalHitPoints))) {

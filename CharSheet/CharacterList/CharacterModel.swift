@@ -13,6 +13,7 @@ enum CharacterClass : String, CaseIterable, Codable {
     case rogue = "Rogue"
     case barbarian = "Barbarian"
     case cleric = "Cleric"
+    case fighter = "Fighter"
     case wizard = "Wizard"
     case paladin = "Paladin"
     case ranger = "Ranger"
