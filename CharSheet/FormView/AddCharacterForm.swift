@@ -14,10 +14,11 @@ struct AddCharacterForm: View {
     @EnvironmentObject var listViewModel : CharacterListViewModel
 
     @State var characterName : String = ""
-    @State private var selectedGameType : gameType = .FantasyStandard
+    @State private var selectedGameType : GameType = .FantasyStandard
     @State private var selectedLevel = 1
-    @State private var selectedHitPoints = 0
-    @State private var selectedClass : characterClass = .Barbarian
+    @State private var selectedCurrentHitPoints = 0
+    @State private var selectedTotalHitPoints = 100
+    @State private var selectedClass : CharacterClass = .barbarian
     @State private var inputURL = ""
 
     
@@ -27,11 +28,12 @@ struct AddCharacterForm: View {
                 
                 Section(header: Text("Character Name")) {
                     TextField("Character Name", text: $characterName)
+                    .autocorrectionDisabled()
                 }
                 
                 Picker("RPG Type", selection: $selectedGameType) {
-                    Text("That Fantasy Game").tag(gameType.FantasyStandard)
-                    Text("PbTA").tag(gameType.PBtA)
+                    Text("That Fantasy Game").tag(GameType.FantasyStandard)
+                    Text("PbTA").tag(GameType.PBtA)
                 }
                 .pickerStyle(.inline)
                 
@@ -49,11 +51,13 @@ struct AddCharacterForm: View {
                 
                 
                 Section(header: Text("Number of Hit Points")) {
-                    TextField("# of Hit Points", value: $selectedHitPoints, format: .number)
+                    TextField("Current # of Hit Points", value: $selectedCurrentHitPoints, format: .number)
+                  
+                  TextField("Total# of Hit Points", value: $selectedTotalHitPoints, format: .number)
                 }
                 
                 Picker("Pick Your Class", selection: $selectedClass) {
-                    ForEach(characterClass.allCases, id: \.self) { className in
+                    ForEach(CharacterClass.allCases, id: \.self) { className in
                         Text("\(className.rawValue)")
                             .tag(className)
                     }
@@ -81,7 +85,7 @@ struct AddCharacterForm: View {
     }
     
     func saveButtonPressed() {
-        listViewModel.addCharacter(gameType: selectedGameType, characterName: characterName, level: selectedLevel, hitPoints: selectedHitPoints, characterType: selectedClass, URL: inputURL)
+        listViewModel.addCharacter(gameType: selectedGameType, characterName: characterName, level: selectedLevel, currentHitPoints: selectedCurrentHitPoints, totalHitPoints: selectedTotalHitPoints, characterType: selectedClass, URL: inputURL)
         
         presentationMode.wrappedValue.dismiss()
     }

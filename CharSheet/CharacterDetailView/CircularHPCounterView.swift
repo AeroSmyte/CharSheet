@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CircularHPCounterView: View {
-  var hitPoints: Int
+  var currentHitPoints: Int
+  var totalHitPoints: Int
   
   var body: some View {
     ZStack {
@@ -17,12 +18,24 @@ struct CircularHPCounterView: View {
           Color.gray.opacity(0.5),
           lineWidth: 7
         )
-      Text("Current Hit Points".uppercased())
-        .font(.title3)
-        .foregroundColor(.gray)
-        .fontWeight(.heavy)
+      VStack {
+        Text("\(currentHitPoints)")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
+        Divider()
+          .frame(width: 100)
+        Text("\(totalHitPoints)")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
+        Text("HP")
+          .font(.title2)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
+      }
       Circle()
-        .trim(from: 0, to: CGFloat(hitPoints) / 100.0)
+        .trim(from: 0, to: CGFloat(currentHitPoints) / CGFloat(totalHitPoints))
         .stroke(
           Color("AccentColor"),
           style: StrokeStyle (
@@ -37,6 +50,6 @@ struct CircularHPCounterView: View {
 
 struct CircularHPCounterView_Previews: PreviewProvider {
     static var previews: some View {
-      CircularHPCounterView(hitPoints: 50)
+      CircularHPCounterView(currentHitPoints: 50, totalHitPoints: 100)
     }
 }

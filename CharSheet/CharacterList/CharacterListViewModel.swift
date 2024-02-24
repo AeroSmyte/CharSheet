@@ -39,13 +39,14 @@ class CharacterListViewModel : ObservableObject {
         self.characters = savedCharacters
     }
     
-    func addCharacter(gameType: gameType,
+    func addCharacter(gameType: GameType,
                       characterName: String,
                       level: Int,
-                      hitPoints: Int,
-                      characterType: characterClass,
+                      currentHitPoints: Int,
+                      totalHitPoints: Int,
+                      characterType: CharacterClass,
                       URL: String) {
-        let newChar = Character(gameType: gameType, characterName: characterName, level: level, hitPoints: hitPoints, characterClass: characterType, URL: URL)
+        let newChar = Character(gameType: gameType, characterName: characterName, level: level, currentHitPoints: currentHitPoints, totalHitPoints: totalHitPoints, characterClass: characterType, URL: URL)
         characters.append(newChar)
     }
     

@@ -14,7 +14,7 @@ struct NoCharactersView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                Text("You don't have any tasks!")
+                Text("You don't have any characters yet!")
                     .font(.title)
                     .fontWeight(.semibold)
                 Text("When is your next game? You should head up to the Add button and add a new character!")

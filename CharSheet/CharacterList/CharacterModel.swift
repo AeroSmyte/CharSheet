@@ -8,31 +8,83 @@
 import Combine
 import SwiftUI
 
-enum characterClass : String, CaseIterable, Codable {
-    case Bard = "Bard"
-    case Rogue = "Rogue"
-    case Barbarian = "Barbarian"
-    case Cleric = "Cleric"
-    case Wizard = "Wizard"
-    case Paladin = "Paladin"
-    case Ranger = "Ranger"
-    case Sorceror = "Sorceror"
-    case Druid = "Druid"
-    case Warlock = "Warlock"
-    case None = "None"
+enum CharacterClass : String, CaseIterable, Codable {
+    case bard = "Bard"
+    case rogue = "Rogue"
+    case barbarian = "Barbarian"
+    case cleric = "Cleric"
+    case wizard = "Wizard"
+    case paladin = "Paladin"
+    case ranger = "Ranger"
+    case sorceror = "Sorceror"
+    case druid = "Druid"
+    case warlock = "Warlock"
+    case none = "None"
 }
 
-enum gameType: Codable {
+enum Status: Int, Codable, CaseIterable, Identifiable {
+  case active, inactive
+  var id: Self {
+    self
+  }
+  
+  var descr: String {
+    switch self {
+    case .active:
+      return "Active"
+    case .inactive:
+      return "Inactive"
+    }
+  }
+}
+
+enum GameType: Codable {
     case FantasyStandard, PBtA
 }
 
-struct Character : Identifiable, Codable {
-    var gameType : gameType
-    var characterName : String
-    var level : Int
-    var hitPoints : Int
-    var characterClass : characterClass
-    var id = UUID().uuidString
-    var URL : String?
+//struct Character : Identifiable, Codable {
+//    var gameType : gameType
+//    var characterName : String
+//    var level : Int
+//    var hitPoints : Int
+//    var characterClass : characterClass
+//    var id = UUID().uuidString
+//    var URL : String = ""
+//}
+
+class Character : Identifiable, Codable {
+  var gameType : GameType
+  var characterName : String
+  var level : Int
+  var currentHitPoints : Int
+  var totalHitPoints : Int
+  var dateAdded : Date
+  var characterClass : CharacterClass
+  var id = UUID().uuidString
+  var URL : String
+  var status: Status = .active
+  
+  init(gameType: GameType = .FantasyStandard,
+       characterName: String,
+       level: Int,
+       currentHitPoints: Int,
+       totalHitPoints: Int,
+       dateAdded: Date = Date.now,
+       characterClass: CharacterClass = .barbarian,
+       id: String = UUID().uuidString,
+       URL: String = "",
+       status: Status = .active) {
+    self.gameType = gameType
+    self.characterName = characterName
+    self.level = level
+    self.currentHitPoints = currentHitPoints
+    self.totalHitPoints = totalHitPoints
+    self.dateAdded = dateAdded
+    self.characterClass = characterClass
+    self.id = id
+    self.URL = URL
+    self.status = status
+  }
+  
 }
 

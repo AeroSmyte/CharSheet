@@ -36,7 +36,7 @@ struct CharacterCell : View {
 }
 
 struct CharacterCellView_Previews: PreviewProvider {
-    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, characterClass: .None, URL: "google.com")
+    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, currentHitPoints: 50, totalHitPoints: 100, characterClass: .none, URL: "www.google.com")
     
     static var previews: some View {
         CharacterCell(character: character1)

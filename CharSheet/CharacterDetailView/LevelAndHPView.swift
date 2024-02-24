@@ -10,14 +10,23 @@ import SwiftUI
 struct LevelAndHPView: View {
   var level: Int
   var hitPoints: Int
-  
-  var body: some View {
-    HStack {
-      
-      CharacterDetailsTextView(text: "Level \(level)".uppercased())
+  var totalHitPoints: Int
 
-      CharacterDetailsTextView(text: "HP: \(hitPoints)")
+  var body: some View {
+    VStack {
+      
+      ProgressView(value: (Double(level) / 20.0)) {
+        CharacterDetailsTextView(text: "Level \(level)".uppercased())
+          .kerning(1)
+
+      }
+        
+      ProgressView(value: (Double(hitPoints) / Double(totalHitPoints))) {
+        CharacterDetailsTextView(text: "HP: \(hitPoints) / \(totalHitPoints)".uppercased())
+          .kerning(1)
+      }
     }
+    .frame(maxWidth: 200)
   }
 }
 
@@ -32,6 +41,6 @@ struct CharacterDetailsTextView: View {
 
 struct LevelAndHPView_Previews: PreviewProvider {
     static var previews: some View {
-      LevelAndHPView(level: 10, hitPoints: 145)
+      LevelAndHPView(level: 10, hitPoints: 145, totalHitPoints: 200)
     }
 }
