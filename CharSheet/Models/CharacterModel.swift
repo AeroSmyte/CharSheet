@@ -8,51 +8,6 @@
 import Combine
 import SwiftUI
 
-enum CharacterClass : String, CaseIterable, Codable {
-    case bard = "Bard"
-    case rogue = "Rogue"
-    case barbarian = "Barbarian"
-    case cleric = "Cleric"
-    case fighter = "Fighter"
-    case wizard = "Wizard"
-    case paladin = "Paladin"
-    case ranger = "Ranger"
-    case sorceror = "Sorceror"
-    case druid = "Druid"
-    case warlock = "Warlock"
-    case none = "None"
-}
-
-enum Status: Int, Codable, CaseIterable, Identifiable {
-  case active, inactive
-  var id: Self {
-    self
-  }
-  
-  var descr: String {
-    switch self {
-    case .active:
-      return "Active"
-    case .inactive:
-      return "Inactive"
-    }
-  }
-}
-
-enum GameType: Codable {
-    case FantasyStandard, PBtA
-}
-
-//struct Character : Identifiable, Codable {
-//    var gameType : gameType
-//    var characterName : String
-//    var level : Int
-//    var hitPoints : Int
-//    var characterClass : characterClass
-//    var id = UUID().uuidString
-//    var URL : String = ""
-//}
-
 class Character : Identifiable, Codable {
   var gameType : GameType
   var characterName : String
@@ -86,6 +41,6 @@ class Character : Identifiable, Codable {
     self.URL = URL
     self.status = status
   }
-  
 }
+
 

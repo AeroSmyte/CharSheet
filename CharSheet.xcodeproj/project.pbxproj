@@ -20,6 +20,9 @@
 		D37ED4B32A6DE94B0059829C /* CharSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4B22A6DE94B0059829C /* CharSheetTests.swift */; };
 		D37ED4BD2A6DE94B0059829C /* CharSheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4BC2A6DE94B0059829C /* CharSheetUITests.swift */; };
 		D37ED4BF2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED4BE2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift */; };
+		D3AD05192B8A52DF00A5815E /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD05182B8A52DF00A5815E /* CharacterClass.swift */; };
+		D3AD051B2B8A52F500A5815E /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD051A2B8A52F500A5815E /* Status.swift */; };
+		D3AD051D2B8A530400A5815E /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD051C2B8A530400A5815E /* GameType.swift */; };
 		D3B73AD62A7B6AC90011B472 /* AddCharacterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B73AD52A7B6AC90011B472 /* AddCharacterForm.swift */; };
 		D3CEC04E2A78130A00529EB7 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEC04B2A78130A00529EB7 /* CharacterModel.swift */; };
 		D3CEC04F2A78130A00529EB7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEC04C2A78130A00529EB7 /* CharacterDetailView.swift */; };
@@ -61,6 +64,9 @@
 		D37ED4B82A6DE94B0059829C /* CharSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37ED4BC2A6DE94B0059829C /* CharSheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSheetUITests.swift; sourceTree = "<group>"; };
 		D37ED4BE2A6DE94B0059829C /* CharSheetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSheetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3AD05182B8A52DF00A5815E /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
+		D3AD051A2B8A52F500A5815E /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D3AD051C2B8A530400A5815E /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 		D3B73AD52A7B6AC90011B472 /* AddCharacterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharacterForm.swift; sourceTree = "<group>"; };
 		D3CEC04B2A78130A00529EB7 /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		D3CEC04C2A78130A00529EB7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		D37ED4A02A6DE9490059829C /* CharSheet */ = {
 			isa = PBXGroup;
 			children = (
+				D3AD05172B8A52CA00A5815E /* Models */,
 				D304E0E42B852C9600784B2A /* CharacterDetailView */,
 				D3F08B302A9B12D2001996F6 /* NoCharacters */,
 				D33EF8752A899D85001AE81A /* Character */,
@@ -173,6 +180,17 @@
 			path = CharSheetUITests;
 			sourceTree = "<group>";
 		};
+		D3AD05172B8A52CA00A5815E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3CEC04B2A78130A00529EB7 /* CharacterModel.swift */,
+				D3AD05182B8A52DF00A5815E /* CharacterClass.swift */,
+				D3AD051A2B8A52F500A5815E /* Status.swift */,
+				D3AD051C2B8A530400A5815E /* GameType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D3B73AD42A7B6AAB0011B472 /* FormView */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +202,6 @@
 		D3CEC04A2A78130A00529EB7 /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
-				D3CEC04B2A78130A00529EB7 /* CharacterModel.swift */,
 				D3CEC04C2A78130A00529EB7 /* CharacterDetailView.swift */,
 				D3CEC04D2A78130A00529EB7 /* CharacterList.swift */,
 				D33EF8732A899661001AE81A /* CharacterListViewModel.swift */,
@@ -332,14 +349,17 @@
 			files = (
 				D3B73AD62A7B6AC90011B472 /* AddCharacterForm.swift in Sources */,
 				D3F08B2F2A9B12C8001996F6 /* NoCharactersView.swift in Sources */,
+				D3AD05192B8A52DF00A5815E /* CharacterClass.swift in Sources */,
 				D304E0E62B852CB200784B2A /* ClassTitleView.swift in Sources */,
 				D3CEC04F2A78130A00529EB7 /* CharacterDetailView.swift in Sources */,
+				D3AD051D2B8A530400A5815E /* GameType.swift in Sources */,
 				D3271BB52B853F8C00B6335F /* CircularHPCounterView.swift in Sources */,
 				D304E0E82B852CE200784B2A /* CharacterNameTitleView.swift in Sources */,
 				D304E0EA2B852D3200784B2A /* LevelAndHPView.swift in Sources */,
 				D33EF8742A899661001AE81A /* CharacterListViewModel.swift in Sources */,
 				D33EF8772A899D9C001AE81A /* CharacterCell.swift in Sources */,
 				D37ED4A22A6DE9490059829C /* CharSheetApp.swift in Sources */,
+				D3AD051B2B8A52F500A5815E /* Status.swift in Sources */,
 				D3CEC04E2A78130A00529EB7 /* CharacterModel.swift in Sources */,
 				D304E0EC2B852DBE00784B2A /* StandardLinkButton.swift in Sources */,
 				D3CEC0502A78130A00529EB7 /* CharacterList.swift in Sources */,
