@@ -78,9 +78,9 @@ struct AddCharacterForm: View {
                     
                 })
                 .disabled(characterName.count < 3)
-                .navigationTitle("Add New Character")
             }
         }
+        .navigationTitle("Add New Character")
 
     }
     

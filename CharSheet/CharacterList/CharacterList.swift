@@ -22,8 +22,8 @@ struct CharacterList: View {
             } else {
                 List {
                     ForEach(listViewModel.filteredCharacters) { character in
-                        NavigationLink(destination: CharacterDetailCardView(character: character), label: {
-                            CharacterCell(character: character)
+                        NavigationLink(destination: CharacterDetailView(character: character), label: {
+                          CharacterCell(characterName: character.characterName, level: character.level, characterClass: character.characterClass)
                         })
                     }
                     .onDelete(perform: listViewModel.deleteCharacter)

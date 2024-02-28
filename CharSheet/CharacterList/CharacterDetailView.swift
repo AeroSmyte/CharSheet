@@ -8,76 +8,84 @@
 import SwiftUI
 
 struct CharacterDetailView: View {
-    var character : Character
-    
-    var body: some View {
-        NavigationView {
-            ZStack() {
-                Color.accentColor.ignoresSafeArea()
-                
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.white)
-                    .frame(width: 300, height: 300)
-                    .shadow(radius: 20)
-                
-                VStack(spacing: 10) {
-                    Text(character.characterName)
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: 285)
-                        .padding()
-                        .lineLimit(2)
-                        .multilineTextAlignment(.center)
-                    
-                    HStack(spacing: 50) {
-                        Text("Level \(character.level)")
-                            .font(.title3)
-                            .foregroundColor(.secondary)
-                        Text(character.characterType.rawValue)
-                            .font(.title3)
-                            .foregroundColor(.secondary)
-                        
-                    }
-                    
-                    HStack {
-                        VStack {
-                            Text("HP")
-                                .font(.title)
-                            Text("\(character.hitPoints)")
-                                .font(.subheadline)
-                        }
-                    }
-                    
-                }
-                
-            }
+  @Environment(\.openURL) private var openURL
+  var character : Character
+  
+  var body: some View {
+    NavigationView {
+      VStack {
+        CharacterNameTitleView(name: character.characterName)
+        ClassTitleView(characterClass: character.characterClass.rawValue)
+        CircularHPCounterView(currentHitPoints: character.currentHitPoints, totalHitPoints: character.totalHitPoints)
+          .frame(maxWidth: 200)
+        LevelAndHPView(level: character.level, hitPoints: character.currentHitPoints, totalHitPoints: character.totalHitPoints)
+        ButtonView(label: "Link To Sheet", icon: "square.and.arrow.up") {
+          
+          
         }
-        
+      }
     }
-    
-    
+  }
 }
 
 struct CharacterDetailView_Previews: PreviewProvider {
-    
-    static var character1 = Character(gameType: .FantasyStandard, characterName: "Character Not Supplied", level: 0, hitPoints: 0, characterType: .None, URL: "google.com")
-    
-    static var previews: some View {
-        CharacterDetailView(character: character1)
-    }
+  
+  static var character1 = Character(
+    gameType: .FantasyStandard,
+    characterName: "Character Not Supplied",
+    level: 0,
+    currentHitPoints: 64,
+    totalHitPoints: 100,
+    characterClass: .none,
+    URL: "google.com",
+    status: .active
+  )
+  
+  static var previews: some View {
+    CharacterDetailView(character: character1)
+  }
 }
 
-struct StandardButton: View {
-    var title : String
-    
-    var body: some View {
-        Text(title)
-            .bold()
-            .font(.title2)
-            .frame(width: 160, height: 50)
-            .background(Color(.systemRed))
-            .foregroundColor(.white)
-            .cornerRadius(10.0)
-        
+struct ButtonView: View {
+  let icon: String?
+  let label: String
+  let action: () -> Void
+  
+  init(
+    label: String,
+    icon: String? = nil,
+    action: @escaping () -> Void
+  ) {
+    self.label = label
+    self.icon = icon
+    self.action = action
+  }
+  
+  var body: some View {
+    Button {
+      action()
+    } label: {
+      HStack(spacing: 8) {
+        if let icon {
+          Image(systemName: icon)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 28, height: 28)
+        }
+        Text(label)
+      }
+      .font(.title2)
+      .padding(.vertical, 12)
+      .foregroundColor(Color("AccentColor"))
+      .frame(maxWidth: .infinity)
+      .background {
+        RoundedRectangle(cornerRadius: 12)
+          .stroke(Color.purple, lineWidth: 2.0)
+          .background {
+            RoundedRectangle(cornerRadius: 12)
+              .fill(Color("AccentColor").opacity(0.2))
+          }
+      }
     }
+  }
 }
