@@ -6,18 +6,31 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct CharSheetApp: App {
-    
-    @StateObject var listViewModel : CharacterListViewModel = CharacterListViewModel()
-    
-    var body: some Scene {
-        WindowGroup {
-            NavigationView {
-                CharacterList()
-            }
-            .environmentObject(listViewModel)
-        }
+  
+  let modelContainer: ModelContainer
+  
+  init() {
+    do {
+      modelContainer = try ModelContainer(for: Character.self)
+    } catch {
+      fatalError("Could not initialize ModelContainer")
     }
+  }
+  
+  
+  @StateObject var listViewModel : CharacterListViewModel = CharacterListViewModel()
+  
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        CharacterList()
+      }
+      .environmentObject(listViewModel)
+    }
+    .modelContainer(modelContainer)
+  }
 }
