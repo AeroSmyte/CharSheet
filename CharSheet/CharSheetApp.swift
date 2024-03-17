@@ -21,15 +21,11 @@ struct CharSheetApp: App {
     }
   }
   
-  
-  @StateObject var listViewModel : CharacterListViewModel = CharacterListViewModel()
-  
   var body: some Scene {
     WindowGroup {
       NavigationView {
         CharacterList()
       }
-      .environmentObject(listViewModel)
     }
     .modelContainer(modelContainer)
   }

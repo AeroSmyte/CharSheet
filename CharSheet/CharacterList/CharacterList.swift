@@ -6,33 +6,39 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CharacterList: View {
-    
-    @EnvironmentObject var listViewModel : CharacterListViewModel
-    
+  
+  @Query(sort: \Character.characterName) private var characters: [Character]
+  @Environment(\.modelContext) var context
+  
+        
     @State var isAddFormActive = false
     
     var body: some View {
         NavigationStack {
         
-            if listViewModel.characters.isEmpty {
+            if characters.isEmpty {
                 NoCharactersView()
                     .navigationTitle("No Characters!")
             } else {
                 List {
-                    ForEach(listViewModel.filteredCharacters) { character in
+                    ForEach(characters) { character in
                         NavigationLink(destination: CharacterDetailView(character: character), label: {
                           CharacterCell(characterName: character.characterName, level: character.level, characterClass: character.characterClass)
                         })
                     }
-                    .onDelete(perform: listViewModel.deleteCharacter)
-                    .onMove(perform: listViewModel.moveCharacter)
+                    .onDelete { indexSet in
+                      indexSet.forEach { index in
+                        let char = characters[index]
+                        context.delete(char)
+                      }
+                    }
                     .navigationTitle("QuickChar")
                 }
                 .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: AddCharacterForm()))
                 
-                .searchable(text: $listViewModel.searchText)
             }
         }
     }
@@ -41,6 +47,6 @@ struct CharacterList: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         CharacterList()
-            .environmentObject(CharacterListViewModel())
+            .modelContainer(for: Character.self, inMemory: true)
     }
 }
